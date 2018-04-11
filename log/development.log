@@ -1512,3 +1512,600 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/authors" for 127.0.0.1 at 2018-04-11 14:02:05 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (17.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (46.4ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 374ms (Views: 296.5ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:02:26 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (16.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (97.5ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 166ms (Views: 108.1ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:02:34 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:02:35 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:02:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:02:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2018-04-11 14:02:36 -0300
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:02:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-04-11 14:02:55 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 28.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:02:59 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:03:09 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"homepage"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=homepage):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:04:08 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 24.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:04:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/posts/2" for 127.0.0.1 at 2018-04-11 14:04:47 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gVqqKvncbsrLOYt7VugQfz2cYbRT+uY+SjST0LQRq25GH06b/65aicWr6vm7dupysQqB4Z8RQZmz+qTNLYNIpA==", "id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 19ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:04:47 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/posts/1" for 127.0.0.1 at 2018-04-11 14:04:49 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Zr2Nx42p2SG4LdoFVEilJWrVgYlZQtPPtiKKQu/fAAOh+Gl2i9vtYra/u4e51l8o5kNh3JWpdGhP7L1fdk3jyQ==", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 20ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:04:49 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-04-11 14:04:50 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (69.0ms)
+  Rendered posts/new.html.erb within layouts/application (83.2ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 111.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-04-11 14:05:24 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4PwDGBDZXkexY58VsWO9KWYozGQYyr4ReTQ4cVdplQUDqbwSnAL6cAKO5QHNjHfh2ZIMaOtLCs+fw7BRrdQ/cA==", "post"=>{"author_id"=>"1", "text"=>"Esse é o texto de um artigo.", "subject"=>"Teste de artg", "title"=>"Meu primeiro artigo"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (19.6ms)[0m  [1m[32mINSERT INTO "posts" ("text", "subject", "title", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["text", "Esse é o texto de um artigo."], ["subject", "Teste de artg"], ["title", "Meu primeiro artigo"], ["created_at", "2018-04-11 17:05:24.897471"], ["updated_at", "2018-04-11 17:05:24.897471"], ["author_id", 1]]
+  [1m[35m (39.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 65ms (ActiveRecord: 59.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-04-11 14:05:24 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:05:26 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-04-11 14:05:27 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (3.7ms)
+  Rendered posts/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-04-11 14:05:46 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sNttu0gp1JCaRGPy7Gi1Y+rOmNJiwfNmuZqVGAwUrCtTjtKxxPJwpympGeaQh3+rVXRY3pFAR7hfbR049qkGXg==", "post"=>{"author_id"=>"2", "text"=>"blablablablablablabla", "subject"=>"mais um teste", "title"=>"Artigo 2"}, "commit"=>"Create Post"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.9ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("text", "subject", "title", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["text", "blablablablablablabla"], ["subject", "mais um teste"], ["title", "Artigo 2"], ["created_at", "2018-04-11 17:05:46.171993"], ["updated_at", "2018-04-11 17:05:46.171993"], ["author_id", 2]]
+  [1m[35m (35.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 46ms (ActiveRecord: 37.1ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2018-04-11 14:05:46 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:05:47 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:05:52 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:06:08 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_menu.html.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:06:23 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:06:31 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:06:31 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:13:45 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-04-11 14:13:46 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/edit.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/posts/3" for 127.0.0.1 at 2018-04-11 14:13:49 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4mxcmMOsNdpFjZF6oFmVoxduCGVNo/LpYpnIenZoiXR0+VAQs+yOYdwka2FEPq/1iT/CePhPCwXi5J/CR1MRDg==", "post"=>{"author_id"=>"1", "text"=>"Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Quem manda na minha terra sou euzis! Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. ", "subject"=>"Teste de artg", "title"=>"Meu primeiro artigo"}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "posts" SET "text" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["text", "Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Quem manda na minha terra sou euzis! Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. "], ["updated_at", "2018-04-11 17:13:50.005437"], ["id", 3]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 27ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-04-11 14:13:50 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:13:51 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-04-11 14:13:56 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (3.8ms)
+  Rendered posts/edit.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:14:13 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at 2018-04-11 14:14:15 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/posts/4" for 127.0.0.1 at 2018-04-11 14:14:18 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dfXHiLazqUsxSMCl1GSoVjI6xrnC1ci6UZrBBkeza14VWDFrzUEvFyepXwIDhnD/R3DcW/LasIa8wLIh+79gxQ==", "post"=>{"author_id"=>"2", "text"=>"Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Per aumento de cachacis, eu reclamis. Quem manda na minha terra sou euzis!\r\n\r\nAtirei o pau no gatis, per gatis num morreus. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Diuretics paradis num copo é motivis de denguis. Manduma pindureta quium dia nois paga. ", "subject"=>"mais um teste", "title"=>"Artigo 2"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "text" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["text", "Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Per aumento de cachacis, eu reclamis. Quem manda na minha terra sou euzis!\r\n\r\nAtirei o pau no gatis, per gatis num morreus. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Diuretics paradis num copo é motivis de denguis. Manduma pindureta quium dia nois paga. "], ["updated_at", "2018-04-11 17:14:18.076776"], ["id", 4]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 12ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2018-04-11 14:14:18 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:14:19 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:14:24 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:14:56 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at 2018-04-11 14:14:59 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (3.5ms)
+  Rendered posts/edit.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/posts/4" for 127.0.0.1 at 2018-04-11 14:15:02 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tMc6aHURc2LL1Zo3/EEKa+eYDTT/t9Jr6N+w5WJywUjUasyLDuP1Pt00BZAro9LCktIX1s+4qlcFhcPC3n7K0w==", "post"=>{"author_id"=>"2", "text"=>"Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. In elementis mé pra quem é amistosis quis leo. Quem num gosta di mim que vai caçá sua turmis! Pra lá , depois divoltis porris, paradis.\r\n\r\nTodo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Interagi no mé, cursus quis, vehicula ac nisi. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta.\r\n\r\nNec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Diuretics paradis num copo é motivis de denguis. Atirei o pau no gatis, per gatis num morreus.\r\n\r\nSuco de cevadiss deixa as pessoas mais interessantis. Aenean aliquam molestie leo, vitae iaculis nisl. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Mé faiz elementum girarzis, nisi eros vermeio.\r\n\r\nDelegadis gente finis, bibendum egestas augue arcu ut est. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Sapien in monti palavris qui num significa nadis i pareci latim. Quem num gosta di mé, boa gentis num é.\r\n\r\nQuem manda na minha terra sou euzis! Detraxit consequat et quo num tendi nada. Si num tem leite então bota uma pinga aí cumpadi! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. ", "subject"=>"mais um teste", "title"=>"Artigo 2"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "posts" SET "text" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["text", "Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. In elementis mé pra quem é amistosis quis leo. Quem num gosta di mim que vai caçá sua turmis! Pra lá , depois divoltis porris, paradis.\r\n\r\nTodo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Interagi no mé, cursus quis, vehicula ac nisi. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta.\r\n\r\nNec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Diuretics paradis num copo é motivis de denguis. Atirei o pau no gatis, per gatis num morreus.\r\n\r\nSuco de cevadiss deixa as pessoas mais interessantis. Aenean aliquam molestie leo, vitae iaculis nisl. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Mé faiz elementum girarzis, nisi eros vermeio.\r\n\r\nDelegadis gente finis, bibendum egestas augue arcu ut est. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Sapien in monti palavris qui num significa nadis i pareci latim. Quem num gosta di mé, boa gentis num é.\r\n\r\nQuem manda na minha terra sou euzis! Detraxit consequat et quo num tendi nada. Si num tem leite então bota uma pinga aí cumpadi! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. "], ["updated_at", "2018-04-11 17:15:02.056376"], ["id", 4]]
+  [1m[35m (16.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 30ms (ActiveRecord: 18.9ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2018-04-11 14:15:02 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 14:15:03 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/homepage" for 127.0.0.1 at 2018-04-11 14:15:06 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:21:38 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 23.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:21:40 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:21:40 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:21:40 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (1.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:24:06 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:46:37 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at desc[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 36.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-11 14:47:01 -0300
+Processing by PostsController#homepage as HTML
+  Rendering posts/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at desc[0m
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/homepage.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 1.2ms)
+
+
