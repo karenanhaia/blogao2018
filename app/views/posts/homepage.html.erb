@@ -3,6 +3,7 @@
 <% @posts.each do |post| %>
   <h2><%= post.title %></h2>
   <h3><%= post.subject %></h3>
+  <h3>Category: <%= post.category.description %></h3>
   <p><%= postText post.text %></p>
   <strong>Autor: <%= post.author.name %></strong>
   <h4><%= post.created_at %></h4>

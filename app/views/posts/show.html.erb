@@ -15,5 +15,15 @@
   <%= @post.title %>
 </p>
 
+<p>
+  <strong>Author:</strong>
+  <%= @post.author.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @post.category.description %>
+</p>
+
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
