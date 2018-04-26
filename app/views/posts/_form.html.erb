@@ -11,27 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :author_id %>
-    <%= form.select :author_id, Author.all.collect {|author| [author.name,author.id]}%>
+    <%= form.select :author_id, Author.all.collect {|author| [author.name, author.id]}, {}, {class: 'form-control'} %>
+
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :text %>
-    <%= form.text_area :text, id: :post_text %>
+    <%= form.text_area :text, size: "60x12", id: :post_text, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :subject %>
-    <%= form.text_field :subject, id: :post_subject %>
+    <%= form.text_field :subject, id: :post_subject, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+    <%= form.text_field :title, id: :post_title, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :Submit, class: 'btn btn-success' %>
   </div>
 <% end %>
