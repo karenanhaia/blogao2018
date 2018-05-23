@@ -21,6 +21,15 @@
     <%= form.number_field :age, id: :author_age %>
   </div>
 
+  <% if(!@author.profile.file.nil?) %>
+    <%= image_tag(@author.profile.thumb.url) %>
+    <%= form.check_box :remove_profile %> Remover
+  <% end %>
+  <div class="field">
+    <%= form.label :profile %>
+    <%= form.file_field :profile, id: :author_profile %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
